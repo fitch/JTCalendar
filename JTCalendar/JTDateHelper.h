@@ -10,6 +10,8 @@
 @interface JTDateHelper : NSObject
 
 @property (nonatomic, strong) NSCalendar *calendar;
+
+- initWithLocale:(NSLocale *)locale andTimeZone:(NSTimeZone *)timeZone;
 - (NSDateFormatter *)createDateFormatter;
 
 - (NSDate *)addToDate:(NSDate *)date months:(NSInteger)months;
